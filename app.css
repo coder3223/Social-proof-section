@@ -1,0 +1,236 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0 100px;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+}
+
+/* Main upper container */
+.upper-outer {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Title / Text section */
+.upper-left-container {
+    width: 500px;
+    height: 300px;
+}
+
+.main-header {
+    color:hsl(300, 43%, 22%);
+    font-size: 2.25rem;
+    width: 400px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main-text {
+    color: hsl(303, 10%, 53%);
+    width: 450px;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+/* Star review section */
+.upper-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 600px;
+    height: 275px;
+    margin-left: 120px;
+}
+
+.review-star-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70px;
+    width: 485px;
+    border-radius: 10px;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.review-star-container > h2 {
+    color: hsl(300, 43%, 22%);
+    font-size: 15px;
+    font-weight: 700;
+    margin: 20px 30px 20px 20px;
+}
+
+.star-icons {
+    margin: 0 30px;
+}
+
+.row-2 {
+    position: relative;
+    left: 60px;
+}
+
+.row-3 {
+    position: relative;
+    left: 120px;
+}
+
+/* Lower testomonials section */
+.lower-container {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review-card {
+    width: 385px;
+    height: 250px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+}
+
+.review-card-upper-conatiner {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    height: 50px;
+}
+
+.profile-pic {
+    margin: 0 25px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.review-card-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-card-header > h3 {
+    margin: 5px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.review-card-header > p {
+    color: hsl(333, 80%, 67%);
+    margin-top: 0;
+}
+
+.review-card-text {
+    color: hsl(0, 0%, 100%);
+    margin: 30px 25px 0 25px;
+    line-height: 1.5;
+}
+
+.card-2 {
+    position: relative;
+    top: 15px;
+}
+
+.card-3 {
+    position: relative;
+    top: 30px;
+}
+
+@media (max-width: 1380px) {
+    body {
+        background-image: url("images/bg-pattern-top-desktop.svg");
+        background-position: left top, right bottom;
+        background-repeat: no-repeat;
+    }
+
+    .upper-outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .upper-left-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .upper-right-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 375px;
+        margin: 0 0 100px 0;
+    }
+
+    .main-header {
+        font-size: 1.75rem;
+        margin-bottom: 30px;
+        width: 375px;
+        text-align: center;
+    }
+
+    .main-text {
+        text-align: center;
+        width: 350px;
+    }
+
+    .review-star-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 325px;
+        margin: 10px 0;
+    }
+
+    .review-star-container > h2 {
+        margin: 0;
+    }
+
+    .review-star-container > p {
+        margin: 0 0 10px 0;
+    }
+
+    .row-2 {
+        position: static;
+       
+    }
+    
+    .row-3 {
+        position: static;
+    }
+
+    .lower-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+    }
+
+    .review-card {
+        width: 350px;
+        padding-bottom: 30px;
+    }
+
+    .review-card-text {
+        width: 310px;
+        text-align: left;
+        margin: 30px 10px 30px 25px;
+        font-size: 15px;
+    }
+
+}
